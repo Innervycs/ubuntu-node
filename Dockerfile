@@ -3,9 +3,9 @@ FROM ubuntu:latest
 RUN apt-get update
 
 # Install Curl
-RUN apt-get install -y curl
+RUN apt-get install -qq -y curl
 # Install NodeJS
 RUN curl -sL https://deb.nodesource.com/setup_12.x | -E bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -qq -y nodejs
 
 CMD ["/bin/bash"]
