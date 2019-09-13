@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+RUN apt-get update
+
 # Install Curl
 RUN apt-get install -y curl
 # Install NodeJS
